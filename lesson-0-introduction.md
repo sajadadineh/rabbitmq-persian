@@ -65,9 +65,9 @@ AMQP => Advanced Message Queuing Protocol
 java , python , js , ruby , php , .net
 
 
-تو درس بعدی میایم یک صف درست میکنیم و یک پیام ساده ارسال میکنیم
+تو [درس بعدی](https://github.com/sajadadineh/rabbitmq-persian/)
+ میایم یک صف درست میکنیم و یک پیام ساده ارسال میکنیم
 
-[درس بعدی](https://github.com/sajadadineh/rabbitmq-persian/)
 
 ---
 
