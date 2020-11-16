@@ -196,6 +196,47 @@ const secs = msg.content.toString().split('.').length - 1;
 
 بعد تست های مد نظرتون رو انجام بدید به این شکل که وقتی ورکر در حال کار کردن است بریکش(۳) کنید تا ببینید تسکی که در دست خود ورکر هست به ورکر بعدی داده میشه یا نه
 
+من کل کد ورکر رو هم در اینجا قرار میدم تا بتونید به راحتی کپیش کنید و تستش کنید
+
+
+```javascript
+
+const amqp = require('amqplib/callback_api');
+
+amqp.connect('amqp://localhost', (connError, connection) => {
+  if(connError){
+    throw connError;
+  }
+  connection.createChannel((channelError, channel) => {
+  
+    if(channelError){
+      throw channelError;
+    }
+    
+    const queue = "task"
+    const msg = process.argv.slice(2).join(' ') || "Hello World!";
+    
+    channel.assertQueue(queue, {durable: true});
+    
+    channel.prefetch(1);
+    console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue);
+    
+    channel.consume(queue, function(msg) {
+      const secs = msg.content.toString().split('.').length - 1;
+
+      console.log(" [x] Received %s", msg.content.toString());
+      setTimeout(function() {
+        console.log(" [x] Done");
+        channel.ack(msg);
+      }, secs * 1000);
+    }, {
+      noAck: false
+    });
+  });
+})
+
+```
+
 ---
 (۱) worker
 
