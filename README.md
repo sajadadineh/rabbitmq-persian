@@ -1,6 +1,5 @@
-# rabbitmq-persian
 <div dir='rtl'>
-  <h2> رابیت ام کیو به زبان ساده </h2>
+  <h2> رابیت ام کیو به زبان ساده - RabbitMQ-in-persian </h2>
 
 
 سلام
