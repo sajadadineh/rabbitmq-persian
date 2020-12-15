@@ -1,5 +1,5 @@
-# rabbitmq-persian
-### راببیت ام کیو به زبان ساده
+<div dir='rtl'>
+  <h2> رابیت ام کیو به زبان ساده - RabbitMQ-in-persian </h2>
 
 
 سلام
@@ -49,6 +49,8 @@
 و میتونید برای پیدا کردن نمونه کد زبان مد نظرتون به داک خود رابیت مراجعه کنید
 
 #### [شروع](https://github.com/sajadadineh/rabbitmq-persian/blob/main/lesson-0-introduction.md)
+
+</div>
 
 ---
 

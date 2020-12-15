@@ -1,4 +1,6 @@
-### چرا ما از رابیت ام کیو استفاده میکنیم و مزایاش برای ما چیه
+<div dir='rtl'>
+ 
+<h2> چرا ما از رابیت ام کیو استفاده میکنیم و مزایاش برای ما چیه </h2>
 
 
 ![image](https://www.rabbitmq.com/img/tutorials/python-one.png)
@@ -25,7 +27,7 @@
 و این سیستم ها نمیدونن که سیستم عامل کسی که این پیام رو میگیره چیه و یا با چه تکنولوژی زده شده و این اتصال رو کم میکنه و این یک نکته ی خیلی مهم برای ما هست
 
 
-### این اتصال ها به چه شکل انجام میشه
+<h2> این اتصال ها به چه شکل انجام میشه </h2> 
 
 ![image](https://www.rabbitmq.com/img/tutorials/exchanges.png)
 
@@ -69,6 +71,7 @@ java , python , js , ruby , php , .net
 تو [درس بعدی](https://github.com/sajadadineh/rabbitmq-persian/blob/main/lesson-1-helloworld.md)
  میایم یک صف درست میکنیم و یک پیام ساده ارسال میکنیم
 
+</div>
 
 ---
 
